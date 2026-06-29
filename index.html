@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>专精特新 · 企业自评</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="page">
+    <header class="app-header">
+      <h1>专精特新企业自评平台</h1>
+      <p class="sub" id="header-sub">两套测评 · 任选其一</p>
+    </header>
+
+    <section class="picker">
+      <div class="picker-title">请选择测评类型</div>
+      <div class="picker-cards">
+        <div class="picker-card" data-type="eval">
+          <div class="pc-tag">发展评价</div>
+          <div class="pc-title">专精特新发展评价</div>
+          <div class="pc-desc">7 维度 27 题 · 全面评估发展水平</div>
+        </div>
+        <div class="picker-card" data-type="cert">
+          <div class="pc-tag">认定自评</div>
+          <div class="pc-title">中小企业认定自评</div>
+          <div class="pc-desc">4 维度 13 题 · 对照认定标准打分</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" id="intro" style="display:none">
+      <h2 id="intro-title">关于本测评</h2>
+      <p id="intro-desc"></p>
+      <div class="tags">
+        <span class="tag" id="tag-count">--</span>
+        <span class="tag" id="tag-time">--</span>
+        <span class="tag">数据本地保存</span>
+      </div>
+    </section>
+
+    <section class="form-card" id="form-card" style="display:none">
+      <div class="title">基本信息</div>
+      <div class="field">
+        <label for="company">企业名称 <span style="color:var(--danger)">*</span></label>
+        <input id="company" type="text" placeholder="请输入企业全称" maxlength="50">
+      </div>
+      <div class="field">
+        <label for="name">联系人姓名 <span style="color:var(--danger)">*</span></label>
+        <input id="name" type="text" placeholder="请输入联系人姓名" maxlength="20">
+      </div>
+      <div class="field">
+        <label for="phone">联系电话 <span style="color:var(--danger)">*</span></label>
+        <input id="phone" type="tel" placeholder="请输入手机号" maxlength="11" inputmode="numeric">
+        <div class="err" id="phone-err"></div>
+      </div>
+    </section>
+
+    <div class="footer-actions" id="footer-actions" style="display:none">
+      <button class="btn block" id="btn-start">开始测评</button>
+      <p class="tip-privacy">本测评仅用于企业自评参考，信息不会上传至第三方</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

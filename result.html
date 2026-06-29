@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>测评结果</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+  <div class="page">
+    <header class="result-header">
+      <div class="company-name" id="company-name">--</div>
+      <div class="title" id="report-title">测评报告</div>
+    </header>
+
+    <section class="score-card">
+      <div class="total"><span id="total-score">0</span><span class="unit">分</span></div>
+      <div class="grade-row">
+        <span>综合等级</span>
+        <span class="grade-badge" id="grade-badge">--</span>
+      </div>
+      <div class="desc" id="grade-desc">--</div>
+    </section>
+
+    <section class="section">
+      <div class="h">维度雷达图</div>
+      <div class="radar-wrap"><canvas id="radar"></canvas></div>
+    </section>
+
+    <section class="section">
+      <div class="h">各维度得分</div>
+      <div class="dim-list" id="dim-list"></div>
+    </section>
+
+    <section class="section">
+      <div class="h">改进建议（按薄弱程度排序）</div>
+      <div id="advice-list"></div>
+    </section>
+
+    <div class="actions">
+      <button class="btn ghost" id="btn-retry">重新测评</button>
+      <button class="btn" id="btn-back-home">返回首页</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/suggestions.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/result.js"></script>
+</body>
+</html>

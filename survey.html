@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>测评答题</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/survey.css">
+</head>
+<body>
+  <div class="page">
+    <div class="survey-top">
+      <div class="row">
+        <button class="back" id="btn-back">‹ 返回</button>
+        <span class="progress-text"><b id="cur-idx">1</b> / <span id="total-num">--</span></span>
+      </div>
+      <div class="progress-bar"><div id="progress-fill" style="width:0%"></div></div>
+    </div>
+
+    <div class="breadcrumb" id="breadcrumb">--</div>
+
+    <div class="question-card">
+      <div class="q-title" id="q-title">加载中...</div>
+      <div class="q-meta" id="q-meta"></div>
+    </div>
+
+    <div id="input-area" class="input-area"></div>
+
+    <div class="bottom-bar">
+      <button class="btn ghost" id="btn-prev">上一题</button>
+      <button class="btn" id="btn-next" disabled>下一题</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/survey.js"></script>
+</body>
+</html>
