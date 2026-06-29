@@ -602,7 +602,7 @@ window.INDICATORS_CERT = [
 window.SURVEY_TYPES = {
   eval: {
     id: 'eval',
-    title: '中小企业专精特新发展评价',
+    title: '专精特新小巨人企业认定自评',
     subtitle: '企业自评工具 · 试行版',
     desc: '本测评基于《中小企业专精特新发展评价指标体系》，从专业化、精细化、特色化、创新能力、经营效益、成长性、产业基础 7 个维度全面评估企业发展水平。',
     bank: 'INDICATORS_EVAL',
